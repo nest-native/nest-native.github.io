@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nest Native</title>
+    <meta
+      name="description"
+      content="Nest-native integrations for TypeScript teams that want first-class NestJS architecture without hiding their favorite tools."
+    >
+    <meta property="og:title" content="Nest Native">
+    <meta
+      property="og:description"
+      content="First-class NestJS integrations for Drizzle ORM, tRPC, and future ecosystem tools."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nest-native.dev/">
+    <meta name="theme-color" content="#101820">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Nest Native home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Nest Native</span>
+      </a>
+      <nav class="nav-links" aria-label="Projects">
+        <a href="#projects">Projects</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="https://github.com/nest-native">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Open-source NestJS integrations</p>
+          <h1>Native-feeling libraries for serious NestJS applications.</h1>
+          <p class="hero-lede">
+            Nest Native packages bring decorator-first APIs, dependency
+            injection, testing utilities, and production-minded docs to tools
+            that TypeScript backend teams already love.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">Explore projects</a>
+            <a class="button secondary" href="https://github.com/nest-native">
+              View organization
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Integration principles">
+          <div class="panel-row">
+            <span>Decorators</span>
+            <strong>@Inject*</strong>
+          </div>
+          <div class="panel-row">
+            <span>Modules</span>
+            <strong>forRoot()</strong>
+          </div>
+          <div class="panel-row">
+            <span>Features</span>
+            <strong>forFeature()</strong>
+          </div>
+          <div class="panel-row">
+            <span>Transactions</span>
+            <strong>@Transactional()</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Production packages</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div>
+              <p class="status">Published</p>
+              <h3>nest-drizzle-native</h3>
+              <p>
+                Nest-native Drizzle ORM integration with modules, DI,
+                repositories, named connections, transaction decorators, and
+                runnable samples.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://nest-native.github.io/nest-drizzle-native/">
+                Docs
+              </a>
+              <a href="https://github.com/nest-native/nest-drizzle-native">
+                GitHub
+              </a>
+              <a href="https://www.npmjs.com/package/nest-drizzle-native">
+                npm
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div>
+              <p class="status">Published</p>
+              <h3>nest-trpc-native</h3>
+              <p>
+                Decorator-first tRPC for NestJS, designed around routers,
+                procedures, dependency injection, enhancers, and type-safe
+                client consumption.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://nest-native.github.io/nest-trpc-native/">
+                Docs
+              </a>
+              <a href="https://github.com/nest-native/nest-trpc-native">
+                GitHub
+              </a>
+              <a href="https://www.npmjs.com/package/nest-trpc-native">
+                npm
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card muted">
+            <div>
+              <p class="status">Exploration</p>
+              <h3>nest-prisma-native</h3>
+              <p>
+                A feasibility track for a thin, Prisma-respecting Nest
+                integration focused on clients, repositories, transactions,
+                testing, and error mapping.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/nest-native/nest-prisma-native">
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="philosophy" class="section split">
+        <div class="section-heading">
+          <p class="eyebrow">Philosophy</p>
+          <h2>Feel native. Stay honest.</h2>
+        </div>
+        <div class="principles">
+          <p>
+            A Nest Native package should feel like it belongs next to official
+            NestJS integrations: modules, decorators, dependency injection,
+            lifecycle hooks, testing tools, and clear documentation.
+          </p>
+          <p>
+            It should also respect the tool it integrates. Drizzle should still
+            feel SQL-first. tRPC should still preserve end-to-end type safety.
+            Future Prisma work should keep the generated client visible and
+            trusted.
+          </p>
+          <ul>
+            <li>No unnecessary runtime dependencies.</li>
+            <li>No hidden magic where explicit application code is clearer.</li>
+            <li>No public helper APIs before samples prove they are useful.</li>
+            <li>Production confidence through CI, coverage, samples, and docs.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Nest Native</span>
+      <a href="https://github.com/nest-native">github.com/nest-native</a>
+    </footer>
+  </body>
+</html>
