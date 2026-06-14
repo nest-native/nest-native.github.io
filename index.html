@@ -11,7 +11,7 @@
     <meta property="og:title" content="Nest Native">
     <meta
       property="og:description"
-      content="First-class NestJS integrations for Drizzle ORM, tRPC, and future ecosystem tools."
+      content="First-class NestJS integrations for Drizzle ORM, tRPC, the Vercel AI SDK, AsyncAPI, and Kafka."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nest-native.dev/">
@@ -72,14 +72,14 @@
       <section id="projects" class="section">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
-          <h2>Production packages</h2>
+          <h2>Packages</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
             <div>
               <p class="status">Published</p>
-              <h3>nest-drizzle-native</h3>
+              <h3>@nest-native/drizzle</h3>
               <p>
                 Nest-native Drizzle ORM integration with modules, DI,
                 repositories, named connections, transaction decorators, and
@@ -87,13 +87,13 @@
               </p>
             </div>
             <div class="card-links">
-              <a href="https://nest-native.github.io/nest-drizzle-native/">
+              <a href="https://nest-native.github.io/drizzle/">
                 Docs
               </a>
-              <a href="https://github.com/nest-native/nest-drizzle-native">
+              <a href="https://github.com/nest-native/drizzle">
                 GitHub
               </a>
-              <a href="https://www.npmjs.com/package/nest-drizzle-native">
+              <a href="https://www.npmjs.com/package/@nest-native/drizzle">
                 npm
               </a>
             </div>
@@ -102,7 +102,7 @@
           <article class="project-card featured">
             <div>
               <p class="status">Published</p>
-              <h3>nest-trpc-native</h3>
+              <h3>@nest-native/trpc</h3>
               <p>
                 Decorator-first tRPC for NestJS, designed around routers,
                 procedures, dependency injection, enhancers, and type-safe
@@ -110,14 +110,65 @@
               </p>
             </div>
             <div class="card-links">
-              <a href="https://nest-native.github.io/nest-trpc-native/">
+              <a href="https://nest-native.github.io/trpc/">
                 Docs
               </a>
-              <a href="https://github.com/nest-native/nest-trpc-native">
+              <a href="https://github.com/nest-native/trpc">
                 GitHub
               </a>
-              <a href="https://www.npmjs.com/package/nest-trpc-native">
+              <a href="https://www.npmjs.com/package/@nest-native/trpc">
                 npm
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card muted">
+            <div>
+              <p class="status">In development</p>
+              <h3>@nest-native/ai-sdk</h3>
+              <p>
+                Decorator-first NestJS streaming primitive for the Vercel AI
+                SDK that preserves the full Nest enhancer pipeline — guards,
+                interceptors, pipes, and filters around streamed responses.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/nest-native/ai-sdk">
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card muted">
+            <div>
+              <p class="status">In development</p>
+              <h3>@nest-native/asyncapi</h3>
+              <p>
+                Decorator-first AsyncAPI 3.0 documentation generator for
+                NestJS event-driven services — the AsyncAPI counterpart to
+                @nestjs/swagger.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/nest-native/asyncapi">
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card muted">
+            <div>
+              <p class="status">In development</p>
+              <h3>@nest-native/kafka</h3>
+              <p>
+                Decorator-first NestJS Kafka integration built on Confluent's
+                officially supported @confluentinc/kafka-javascript client,
+                with full enhancer-pipeline support.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/nest-native/kafka">
+                GitHub
               </a>
             </div>
           </article>
