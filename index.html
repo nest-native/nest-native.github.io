@@ -11,7 +11,7 @@
     <meta property="og:title" content="Nest Native">
     <meta
       property="og:description"
-      content="First-class NestJS integrations for Drizzle ORM, tRPC, the Vercel AI SDK, AsyncAPI, and Kafka."
+      content="First-class NestJS integrations for tRPC, Kafka, AsyncAPI, the Vercel AI SDK, and database-backed messaging, jobs, caching, and login lockout."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nest-native.dev/">
@@ -76,29 +76,6 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured">
-            <div>
-              <p class="status">Published</p>
-              <h3>@nest-native/drizzle</h3>
-              <p>
-                Nest-native Drizzle ORM integration with modules, DI,
-                repositories, named connections, transaction decorators, and
-                runnable samples.
-              </p>
-            </div>
-            <div class="card-links">
-              <a href="https://nest-native.dev/drizzle/">
-                Docs
-              </a>
-              <a href="https://github.com/nest-native/drizzle">
-                GitHub
-              </a>
-              <a href="https://www.npmjs.com/package/@nest-native/drizzle">
-                npm
-              </a>
-            </div>
-          </article>
-
           <article class="project-card featured">
             <div>
               <p class="status">Published</p>
@@ -303,6 +280,26 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <div>
+              <p class="status">Deprecated</p>
+              <h3>@nest-native/drizzle</h3>
+              <p>
+                Superseded by NestJS's official Drizzle module,
+                @nestjs/drizzle. 0.5.2 is the last release; the migration
+                guide maps every API to its replacement.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://nest-native.dev/drizzle/docs/migrate-to-nestjs-drizzle">
+                Migration guide
+              </a>
+              <a href="https://docs.nestjs.com/data/drizzle">
+                @nestjs/drizzle
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -321,7 +318,9 @@
             It should also respect the tool it integrates. Drizzle should still
             feel SQL-first. tRPC should still preserve end-to-end type safety.
             Future integrations should only exist when they solve a real gap
-            without hiding the underlying tool.
+            without hiding the underlying tool, and when NestJS ships its own,
+            ours steps aside: @nest-native/drizzle is retired in favor of the
+            official @nestjs/drizzle.
           </p>
           <ul>
             <li>No unnecessary runtime dependencies.</li>
