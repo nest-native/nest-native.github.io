@@ -171,29 +171,6 @@
           <article class="project-card featured">
             <div>
               <p class="status">Published</p>
-              <h3>@nest-native/messaging</h3>
-              <p>
-                Transactional outbox and idempotent inbox for NestJS — atomic
-                "write rows and publish an event" on Drizzle (SQLite/Postgres),
-                delivered over Kafka with effective exactly-once consumption.
-              </p>
-            </div>
-            <div class="card-links">
-              <a href="https://nest-native.dev/messaging/">
-                Docs
-              </a>
-              <a href="https://github.com/nest-native/messaging">
-                GitHub
-              </a>
-              <a href="https://www.npmjs.com/package/@nest-native/messaging">
-                npm
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card featured">
-            <div>
-              <p class="status">Published</p>
               <h3>@nest-native/jobs</h3>
               <p>
                 Background jobs without Redis — a Drizzle-backed queue in your
@@ -300,6 +277,26 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <div>
+              <p class="status">Deprecated</p>
+              <h3>@nest-native/messaging</h3>
+              <p>
+                Superseded by NestJS's official transactional outbox,
+                @nestjs/outbox. 0.8.4 is the last release; the migration
+                guide maps every API to its replacement.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://nest-native.dev/messaging/docs/migrate-to-nestjs-outbox">
+                Migration guide
+              </a>
+              <a href="https://docs.nestjs.com/reliability/outbox">
+                @nestjs/outbox
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -319,8 +316,8 @@
             feel SQL-first. tRPC should still preserve end-to-end type safety.
             Future integrations should only exist when they solve a real gap
             without hiding the underlying tool, and when NestJS ships its own,
-            ours steps aside: @nest-native/drizzle is retired in favor of the
-            official @nestjs/drizzle.
+            ours steps aside: @nest-native/drizzle and @nest-native/messaging are
+            retired in favor of the official @nestjs/drizzle and @nestjs/outbox.
           </p>
           <ul>
             <li>No unnecessary runtime dependencies.</li>
