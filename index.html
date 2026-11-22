@@ -102,29 +102,6 @@
           <article class="project-card featured">
             <div>
               <p class="status">Published</p>
-              <h3>@nest-native/ai-sdk</h3>
-              <p>
-                Decorator-first NestJS streaming primitive for the Vercel AI
-                SDK that preserves the full Nest enhancer pipeline — guards,
-                interceptors, pipes, and filters around streamed responses.
-              </p>
-            </div>
-            <div class="card-links">
-              <a href="https://nest-native.dev/ai-sdk/">
-                Docs
-              </a>
-              <a href="https://github.com/nest-native/ai-sdk">
-                GitHub
-              </a>
-              <a href="https://www.npmjs.com/package/@nest-native/ai-sdk">
-                npm
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card featured">
-            <div>
-              <p class="status">Published</p>
               <h3>@nest-native/asyncapi</h3>
               <p>
                 Decorator-first AsyncAPI 3.0 documentation generator for
@@ -297,6 +274,26 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <div>
+              <p class="status">Deprecated</p>
+              <h3>@nest-native/ai-sdk</h3>
+              <p>
+                Superseded by NestJS's official AI module, @nestjs/ai. 0.6.1
+                is the last release; the migration guide maps every API to its
+                replacement.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://nest-native.dev/ai-sdk/docs/migrate-to-nestjs-ai">
+                Migration guide
+              </a>
+              <a href="https://docs.nestjs.com/ai/overview">
+                @nestjs/ai
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -316,8 +313,9 @@
             feel SQL-first. tRPC should still preserve end-to-end type safety.
             Future integrations should only exist when they solve a real gap
             without hiding the underlying tool, and when NestJS ships its own,
-            ours steps aside: @nest-native/drizzle and @nest-native/messaging are
-            retired in favor of the official @nestjs/drizzle and @nestjs/outbox.
+            ours steps aside: @nest-native/drizzle, @nest-native/messaging and
+            @nest-native/ai-sdk are retired in favor of the official
+            @nestjs/drizzle, @nestjs/outbox and @nestjs/ai.
           </p>
           <ul>
             <li>No unnecessary runtime dependencies.</li>
